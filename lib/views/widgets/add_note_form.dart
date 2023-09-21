@@ -60,7 +60,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
                     formkey.currentState!.save();
                     DateTime now = DateTime.now();
                     String formattedDate =
-                        DateFormat('yyyy-MM-dd – kk:mm').format(now);
+                        DateFormat('E dd/mm/yyyy - hh:mm a').format(now);
                     var notesModel = NoteModel(
                         title: title!,
                         subtitle: subtitle!,
